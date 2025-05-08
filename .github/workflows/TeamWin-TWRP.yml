@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.WF_TOKEN }}
     permissions:
       contents: write
     steps:
